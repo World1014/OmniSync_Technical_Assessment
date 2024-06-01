@@ -1,0 +1,20 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .post {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post:hover {
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+  }
+  
+  .post h2 {
+    margin-bottom: 10px;
+  }
