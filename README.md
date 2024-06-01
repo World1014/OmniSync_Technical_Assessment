@@ -25,12 +25,19 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repo
    ```sh
    git clone https://github.com/World1014/OmniSync_Technical_Assessment.git
-2. Install NPM packages
+
+2. Change Directory into newly cloned directory
+   ```sh
+   cd OmniSync_Technical_Assessment/jsonplaceholder-app-os
+   
+3. Install NPM packages
     ```sh
     npm install
 
-3. Usage
+4. Usage
     ```sh
     npm run dev
 
-then open web browser to: http://localhost:3000
+then open web browser to: 
+```sh
+http://localhost:3000
