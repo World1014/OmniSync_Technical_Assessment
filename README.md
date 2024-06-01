@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repo
    ```sh
-   git clone https://https://github.com/World1014/OmniSync_Technical_Assessment.git
+   git clone https://github.com/World1014/OmniSync_Technical_Assessment.git
 2. Install NPM packages
     ```sh
     npm install
