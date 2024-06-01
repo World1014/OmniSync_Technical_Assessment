@@ -8,6 +8,7 @@ This application displays a list of posts and allows navigation to detailed view
 
 - Display a list of posts
 - Navigate to detailed views of each post
+- Navigate to User page with a list of all posts
 - Built with Next.js and TypeScript
 
 ## Getting Started
