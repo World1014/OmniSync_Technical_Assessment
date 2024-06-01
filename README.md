@@ -39,5 +39,5 @@ These instructions will get you a copy of the project up and running on your loc
     npm run dev
 
 then open web browser to: 
-```sh
-http://localhost:3000
+    ```sh
+    http://localhost:3000
