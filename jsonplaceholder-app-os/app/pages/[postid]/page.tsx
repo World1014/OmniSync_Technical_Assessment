@@ -27,7 +27,7 @@ const Post: React.FC = () => {
   // Render post, user, and comments data
   return (
     <div>
-      <h1>{post.title}</h1>
+      <b>{post.title}</b>
       <p>{post.body}</p>
       <Link href={`/pages/Users/${user.id}`} key={user.id}>
       <h3>{user.name}</h3>

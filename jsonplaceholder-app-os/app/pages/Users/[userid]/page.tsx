@@ -32,7 +32,7 @@ const User: React.FC = () => {
       <ul>
         {posts.map((post: { id: number, title: string, body: string }) => (
           <li key={post.id}>
-            <h3>{post.title}</h3>
+            <b>{post.title}</b>
             <p>{post.body}</p>
           </li>
         ))}
