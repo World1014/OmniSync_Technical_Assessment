@@ -25,11 +25,11 @@ These instructions will get you a copy of the project up and running on your loc
    ```sh
    git clone https://https://github.com/World1014/OmniSync_Technical_Assessment.git
 2. Install NPM packages
-
+    ```sh
     npm install
 
 3. Usage
-
+    ```sh
     npm run dev
 
 then open web browser to: http://localhost:3000
