@@ -1,6 +1,6 @@
 // pages/users/[id].tsx
 "use client";
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation'
 import useSWR from 'swr';
 
 // Function to fetch data from the API
@@ -9,17 +9,19 @@ const fetcher = (url: string) => fetch(url).then(res => res.json());
 // User component
 const User: React.FC = () => {
   // Get user ID from route parameters
-  const router = useRouter();
-  const { id } = router.query;
+  const params = useParams();
+  const user_id = params.userid;
 
   // Fetch user and posts data using SWR
-  const { data: user, error: userError } = useSWR(`https://jsonplaceholder.typicode.com/users/${id}`, fetcher);
-  const { data: posts, error: postsError } = useSWR(`https://jsonplaceholder.typicode.com/users/${id}/posts`, fetcher);
+  const { data: user, error: userError } = useSWR(`https://jsonplaceholder.typicode.com/users/${user_id}`, fetcher);
+  const { data: posts, error: postsError } = useSWR(`https://jsonplaceholder.typicode.com/posts/${user_id}/posts`, fetcher); // doesn't exists so won't work, might need to 
 
   // Show error message if there's an error
   if (userError || postsError) return <div>Failed to load user or posts</div>
   // Show loading message while data is being fetched
   if (!user || !posts) return <div>Loading...</div>
+
+  console.log(user);
 
   // Render user and posts data
   return (

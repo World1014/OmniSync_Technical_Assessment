@@ -20,7 +20,7 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       {data.map((post: { id: number, title: string, body: string }) => (
-        <Link href={`/pages/posts/${post.id}`} key={post.id}>
+        <Link href={`/pages/${post.id}`} key={post.id}>
           <div>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
